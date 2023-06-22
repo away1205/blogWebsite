@@ -1,17 +1,9 @@
 <%- include('header') -%>
 
   <main>
-    <h2>Home</h2>
+    <h2>About</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ad accusantium aliquid debitis officia, enim eius consequuntur nobis delectus, adipisci molestias fugit architecto illum maxime reiciendis iure consectetur, explicabo repellendus.
     </p>
-
-    <% for(let i = 0; i<journal.length; i++){ %>
-      <h3><%= journal[i].title %></h3>
-      <p>
-        <%= truncate(journal[i].text) %>
-        <a href="/<%= journal[i].title %>">More</a></p> 
-    <% } %>
-
   </main>
 
 <%- include('footer') -%>

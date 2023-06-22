@@ -31,6 +31,14 @@ app.get('/', (req, res) => {
   console.log()
 });
 
+app.get('/about', (req, res) => {
+  res.render('about')
+})
+
+app.get('/contact', (req, res) => {
+  res.render('contact') 
+})
+
 for(let i = 0; i<postJournal.length; i++){
   app.get(`/${encodeURIComponent(postJournal[i].title)}`, (req, res) => {
     res.render('post', {journal: postJournal, index: i})
