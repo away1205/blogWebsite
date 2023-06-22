@@ -1,0 +1,27 @@
+<%- include('header') -%>
+
+  <header>
+      <strong>Daily Journal</strong>
+
+    <nav>
+      <a class="button-31" href="/"><span>Home</span></a>
+      <a href="/about" class="button-31"><span>About</span></a>
+      <a href="/contact" class="button-31"><span>Contact</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Home</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ad accusantium aliquid debitis officia, enim eius consequuntur nobis delectus, adipisci molestias fugit architecto illum maxime reiciendis iure consectetur, explicabo repellendus.
+    </p>
+
+    <% for(let i = 0; i<journal.length; i++){ %>
+      <h3>Day <%= i+1 %></h3>
+      <p>
+        <%= truncate(journal[i]) %>
+        <a href="/post<%= i %>">More</a></p> 
+    <% } %>
+
+  </main>
+
+<%- include('footer') -%>
