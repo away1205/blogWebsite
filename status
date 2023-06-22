@@ -1,0 +1,41 @@
+[33mcommit 5cecb0f33feeb77c0f659bff631b85c6fa2e50e1[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Away <agwamayatullah@gmail.com>
+Date:   Fri Jun 23 00:22:26 2023 +0700
+
+    Done Compose Page and some fix with dynamic url using route params
+
+[33mcommit 454ba8aecb091a427eb5851f82313c97d855c9fa[m
+Author: Away <agwamayatullah@gmail.com>
+Date:   Thu Jun 22 20:34:31 2023 +0700
+
+    Finish the About and Contact Page, also fix post page header
+
+[33mcommit ddfaec0c2c4e4ff1859e238f202adddad16d6b21[m
+Author: Away <agwamayatullah@gmail.com>
+Date:   Thu Jun 22 20:26:56 2023 +0700
+
+    Fix the post url with url component
+
+[33mcommit d1d587a0fd486454361ebea343ba10b1aa51f863[m
+Author: Away <agwamayatullah@gmail.com>
+Date:   Thu Jun 22 19:39:57 2023 +0700
+
+    Fix the post.ejs
+
+[33mcommit 8fe1ec76ef62eb913532b430f78860ae34166777[m
+Author: Away <agwamayatullah@gmail.com>
+Date:   Thu Jun 22 19:34:16 2023 +0700
+
+    Finish the Home Page and the Post Page
+
+[33mcommit 3f6ac3e6d573e745d0f71ad24f4a4fff4d53b1c2[m
+Author: Away <agwamayatullah@gmail.com>
+Date:   Wed Jun 21 19:14:58 2023 +0700
+
+    Second Commit
+
+[33mcommit 02c7a0af09718bda8d394ed3d2c8b54cbb3fe60f[m
+Author: Away <agwamayatullah@gmail.com>
+Date:   Wed Jun 21 13:22:14 2023 +0700
+
+    First Commit

@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 const postJournal = [
   {
-    title: 'Super nova',
+    title: 'Supernova',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ad accusantium aliquid debitis officia, enim eius consequuntur nobis delectus, adipisci molestias fugit architecto illum maxime reiciendis iure consectetur, explicabo repellendus.'
   },
   {
@@ -21,7 +21,7 @@ const postJournal = [
 
 const truncateText = function (text){
   if(text.length > 30){
-    return text.substring(0, 120) + '....';
+    return text.substring(0, 180) + '....';
   }
   return text
 };
