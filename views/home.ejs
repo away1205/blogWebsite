@@ -6,12 +6,17 @@
     </p>
 
     <% for(let i = 0; i<journal.length; i++){ %>
-      <h3><%= journal[i].title %></h3>
+      <article>
+        <header>
+          <%= journal[i].title %>
+        </header>
       <p>
         <%= truncate(journal[i].text) %>
         <a href="/<%= journal[i].title %>">More</a></p> 
+      </article>
     <% } %>
 
   </main>
 
 <%- include('footer') -%>
+

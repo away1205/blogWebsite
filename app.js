@@ -28,7 +28,6 @@ const truncateText = function (text){
 
 app.get('/', (req, res) => {
   res.render('home', {journal: postJournal, truncate: truncateText})
-  console.log()
 });
 
 app.get('/about', (req, res) => {
@@ -39,20 +38,27 @@ app.get('/contact', (req, res) => {
   res.render('contact') 
 })
 
-for(let i = 0; i<postJournal.length; i++){
-  app.get(`/${encodeURIComponent(postJournal[i].title)}`, (req, res) => {
-    res.render('post', {journal: postJournal, index: i})
-  });
-}
-
 app.get('/compose', (req, res) => {
   res.render('compose')
 })
 
 app.post('/compose', (req, res) => {
-  console.log(req.body.post)
-  res.redirect('/')
+  let titleCo = req.body.title;
+  let textCo = req.body.text;
+  postJournal.push({
+    title: `${titleCo}`,
+    text: `${textCo}`
+  })
+  res.redirect(`/`)
 })
+
+app.get(`/:title`, (req, res) => {
+  const reqTitle = req.params.title;
+  postJournal.forEach((el, i) => {
+    if(el.title === reqTitle)
+    res.render('post', {journal: postJournal, index: i})
+  })
+});
 
 app.listen(process.env.PORT || 3000, () => {
   console.log('Running in 3000')
