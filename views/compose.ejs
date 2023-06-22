@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Journal</title>
+  <link rel="stylesheet" href="css/pico.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    h1{
+      margin-top: auto;
+    }
+  </style>
+</head>
+
+<body class="container container-fluid">
+<h1>Compose</h1>
+<form action="/compose" method="post">
+  <textarea name="post" cols="30" rows="10"></textarea>
+  <button type="submit">Post</button>
+</form>
+
+<%- include('footer') -%>

@@ -16,10 +16,10 @@
     </p>
 
     <% for(let i = 0; i<journal.length; i++){ %>
-      <h3>Day <%= i+1 %></h3>
+      <h3><%= journal[i].title %></h3>
       <p>
-        <%= truncate(journal[i]) %>
-        <a href="/post<%= i %>">More</a></p> 
+        <%= truncate(journal[i].text) %>
+        <a href="/<%= journal[i].title %>">More</a></p> 
     <% } %>
 
   </main>
